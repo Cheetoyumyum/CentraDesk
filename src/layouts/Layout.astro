@@ -10,14 +10,30 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="The IT Help Desk and Asset Management system that lives inside your Microsoft 365 environment." />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		
+		<title>{title}</title>
+		<meta name="title" content="CentraDesk | The IT Help Desk & Asset Management System for Microsoft 365" />
+		<meta name="description" content="Stop paying per-user fees. CentraDesk is a modern, one-time purchase IT solution that lives in your secure SharePoint environment. Manage tickets, assets, and more." />
+		
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://www.centradesk.ca/" />
+		<meta property="og:title" content="CentraDesk | The IT Help Desk for Microsoft 365" />
+		<meta property="og:description" content="Stop paying per-user fees. CentraDesk is a modern, one-time purchase IT solution that lives in your secure SharePoint environment. Manage tickets, assets, and more." />
+		<meta property="og:image" content="https://www.centradesk.ca/social-preview.png" />
+		
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://www.centradesk.ca/" />
+		<meta property="twitter:title" content="CentraDesk | The IT Help Desk for Microsoft 365" />
+		<meta property="twitter:description" content="Stop paying per-user fees. CentraDesk is a modern, one-time purchase IT solution that lives in your secure SharePoint environment. Manage tickets, assets, and more." />
+		<meta property="twitter:image" content="https://www.centradesk.ca/social-preview.png" />
+
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+		
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
 	</head>
 	<body>
 		<slot />

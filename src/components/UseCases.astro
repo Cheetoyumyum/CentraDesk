@@ -1,0 +1,115 @@
+<section id="usecases" class="usecases">
+    <div class="container">
+        <h2>A Flexible Platform for Any Department</h2>
+        <p class="subtitle">While built for IT, the core engine of CentraDesk—request tracking, asset management, and a knowledge base—can be configured to support any service department in your organization.</p>
+        <div class="grid">
+            <!-- HR Service Center -->
+            <div class="card">
+                <div class="icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </div>
+                <h3>Human Resources</h3>
+                <p>Use the ticketing system to create a confidential portal for employee questions. Track physical assets like security badges and company phones assigned to staff.</p>
+                <ul class="uses-list">
+                    <li>Onboarding Requests</li>
+                    <li>Policy Questions</li>
+                    <li>Track Assigned Phones</li>
+                </ul>
+            </div>
+
+            <!-- Facilities Management -->
+            <div class="card">
+                <div class="icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                </div>
+                <h3>Facilities Management</h3>
+                <p>Adapt the ticketing system for maintenance work orders. Use the asset management module to track valuable equipment and tools.</p>
+                 <ul class="uses-list">
+                    <li>Maintenance Work Orders</li>
+                    <li>Office Supply Requests</li>
+                    <li>Track Company Tools</li>
+                </ul>
+            </div>
+
+            <!-- Operations & General Use -->
+            <div class="card">
+                <div class="icon-wrapper">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="8" x="2" y="2" rx="2"></rect><rect width="8" height="8" x="2" y="14" rx="2"></rect><rect width="8" height="8" x="14" y="2" rx="2"></rect><rect width="8" height="8" x="14" y="14" rx="2"></rect></svg>
+                </div>
+                <h3>Operations Teams</h3>
+                <p>A simple but powerful platform to manage internal team tasks, track project issues, or handle client feedback in a centralized list.</p>
+                 <ul class="uses-list">
+                    <li>Internal Task Assignments</li>
+                    <li>Project Issue Tracking</li>
+                    <li>Client Feedback Logs</li>
+                </ul>
+            </div>
+        </div>
+        <div class="note">
+            <strong>Note:</strong> Using CentraDesk for other departments requires a one-time setup of new SharePoint lists and Power Automate flows, which can be done as a professional service. The core application is flexible enough to support these use cases.
+        </div>
+    </div>
+</section>
+
+<style>
+    .usecases {
+        padding: 6rem 0;
+        text-align: center;
+        background-color: var(--bg-light-color);
+    }
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: var(--heading-color);
+    }
+    .subtitle {
+        font-size: 1.25rem;
+        color: var(--subtle-text-color);
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        text-align: left;
+    }
+    .card {
+        background-color: var(--bg-color);
+        padding: 2rem;
+        border-radius: 12px;
+        border: 1px solid var(--border-color);
+    }
+    .icon-wrapper {
+        display: inline-flex;
+        padding: 0.75rem;
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--heading-color);
+        margin-top: 0;
+    }
+    .uses-list {
+        padding-left: 1.2rem;
+        color: var(--subtle-text-color);
+        font-size: 0.95rem;
+    }
+    .note {
+        max-width: 700px;
+        margin: 3rem auto 0;
+        padding: 1rem;
+        text-align: left;
+        background-color: #f3f2f1;
+        border-left: 4px solid var(--primary-color);
+        font-size: 0.9rem;
+        border-radius: 4px;
+    }
+</style>

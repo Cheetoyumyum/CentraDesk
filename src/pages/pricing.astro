@@ -10,78 +10,55 @@ import '../styles/global.css';
 	<main>
 		<section class="pricing-hero">
 			<div class="container">
-				<h1>One Price. Unlimited Users. Forever.</h1>
-				<p class="subtitle">Stop paying per-user, per-month fees. CentraDesk is a one-time investment that lives in your own secure Microsoft 365 environment, leveraging the licenses you already own.</p>
+				<h1>Simple, Powerful Pricing.</h1>
+				<p class="subtitle">A one-time fee for a perpetual license. Stop paying recurring subscriptions and take full ownership of your IT operations, securely inside your own Microsoft 365 environment.</p>
 			</div>
 		</section>
 
 		<section class="pricing-table">
 			<div class="container">
 				<div class="grid">
-
-					<!-- PROFESSIONAL PACKAGE -->
 					<div class="card">
 						<div class="card-header">
 							<h3>Professional</h3>
 						</div>
 						<div class="price">$7,995 <span class="currency">CAD</span></div>
-						<p class="card-description">The complete turnkey solution for your organization.</p>
+						<p class="card-description">The complete, professionally installed solution for your organization.</p>
 						<ul class="features-list">
 							<li><strong>License: Permanent</strong></li>
 							<li>Unlimited End-Users & IT Agents</li>
 							<li>Full Turnkey Implementation</li>
-							<li>Logo & Brand Color Theming</li>
 							<li>All 5 Core Automation Flows Setup</li>
-							<li>2-Hour Team Training Session</li>
+							<li>1-Hour Team Training Session</li>
 							<li>1 Year of Standard Support Included</li>
 						</ul>
 						<a href="mailto:info@centradesk.ca" class="cta-link">
                             <div class="cta-button secondary">Get Started</div>
                         </a>
 					</div>
-
-					<!-- BUSINESS PRO PACKAGE -->
 					<div class="card recommended">
 						<div class="card-header">
 							<h3>Business Pro</h3>
-							<span class="badge">Most Popular</span>
+							<span class="badge">Best Value</span>
 						</div>
 						<div class="price">$12,495 <span class="currency">CAD</span></div>
-						<p class="card-description">Advanced analytics and a block of consulting time.</p>
+						<p class="card-description">Everything in Professional, plus advanced analytics and customization.</p>
 						<ul class="features-list">
 							<li><strong>Everything in Professional, plus:</strong></li>
+							<li>Logo & Brand Color Theming</li>
 							<li>Power BI Analytics Starter Kit</li>
-							<li>Custom Power BI Report Page</li>
-							<li>2-Hour Dedicated Analytics Session</li>
+							<li><strong>Choice of 2 "Integration Accelerators"</strong></li>
+							<li>(e.g. Custom Dashboards, Data Migration)</li>
 							<li>1 Year of Priority Support Included</li>
 						</ul>
 						<a href="mailto:info@centradesk.ca" class="cta-link">
                             <div class="cta-button">Get Started</div>
                         </a>
 					</div>
-
-                    <!-- ENTERPRISE PACKAGE -->
-					<div class="card">
-						<div class="card-header">
-							<h3>Enterprise Integration</h3>
-						</div>
-						<div class="price">$24,995 <span class="currency">CAD</span></div>
-						<p class="card-description">A fully integrated, long-term solution with custom workflows.</p>
-						<ul class="features-list">
-                            <li><strong>Everything in Business Pro, plus:</strong></li>
-							<li>Choice of 2 "Integration Accelerators"</li>
-							<li>(e.g. Custom Approval Flows)</li>
-							<li>(e.g. Data Migration Assistance)</li>
-                            <li><strong>3 Years of Priority Support Included</strong></li>
-						</ul>
-						<a href="mailto:info@centradesk.ca" class="cta-link">
-                             <div class="cta-button secondary">Get Started</div>
-                        </a>
-					</div>
 				</div>
                 
                 <div class="support-plan">
-                    <h3>Annual Support & Maintenance Plans</h3>
+                    <h3>Annual Support & Maintenance</h3>
                     <p>Continue to receive product updates, new features, and professional support after your first year.</p>
                     <div class="support-tiers">
                         <div><strong>Standard Plan:</strong> $1,495 CAD / year</div>
@@ -91,7 +68,6 @@ import '../styles/global.css';
 			</div>
 		</section>
 
-        <!-- --- VALUE COMPARISON SECTION --- -->
 		<section class="value-comparison">
 			<div class="container">
 				<h2>The 5-Year Advantage</h2>
@@ -132,8 +108,10 @@ import '../styles/global.css';
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    max-width: 900px;
+    margin: auto;
     align-items: stretch;
 }
 
@@ -193,7 +171,6 @@ import '../styles/global.css';
 .support-plan p { max-width: 500px; margin: 0.5rem auto 1.5rem; color: var(--subtle-text-color); }
 .support-tiers { display: flex; justify-content: center; gap: 2rem; font-weight: 600; color: var(--heading-color); }
 
-/* --- VALUE COMPARISON STYLES --- */
 .value-comparison { padding: 6rem 0; text-align: center; }
 .value-comparison h2 { font-size: 2.5rem; font-weight: 800; color: var(--heading-color); }
 .comparison-grid { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 2rem; max-width: 800px; margin: 3rem auto 0; }

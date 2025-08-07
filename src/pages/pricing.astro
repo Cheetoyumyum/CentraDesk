@@ -35,7 +35,7 @@ import '../styles/global.css';
 							<li>2-Hour Team Training Session</li>
 							<li><strong>1 Year of Support & Updates Included</strong></li>
 						</ul>
-						<a href="mailto:info@centradesk.ca" class="cta-button-link">
+						<a href="mailto:info@centradesk.ca" class="cta-link">
                             <div class="cta-button">Get Started</div>
                         </a>
 					</div>
@@ -56,7 +56,7 @@ import '../styles/global.css';
 							<li>&nbsp;</li>
 							<li>&nbsp;</li>
 						</ul>
-						<a href="mailto:info@centradesk.ca" class="cta-button-link">
+						<a href="mailto:info@centradesk.ca" class="cta-link">
                             <div class="cta-button">Get Started</div>
                         </a>
 					</div>
@@ -118,24 +118,9 @@ import '../styles/global.css';
 .features-list li { padding: 0.5rem 0; display: flex; align-items: center; }
 .features-list li::before { content: '✓'; color: #2E7D32; font-weight: bold; margin-right: 0.75rem; }
 
-.cta-button-link {
-    text-decoration: none;
-}
-
-.cta-button { 
-    text-align: center; 
-    background-color: var(--primary-color); 
-    color: white;
-    padding: 0.75rem 1rem; 
-    border-radius: 6px; 
-    font-weight: 600; 
-    transition: background-color 0.2s;
-    border: 1px solid var(--primary-color);
-}
-
-.cta-button-link:hover .cta-button { 
-    background-color: var(--primary-hover-color); 
-}
+.cta-link { display: block; text-decoration: none; margin-top: auto; }
+.cta-button { width: 100%; text-align: center; background-color: var(--primary-color); color: white; padding: 0.75rem 1rem; border-radius: 6px; font-weight: 600; transition: background-color 0.2s; border: 1px solid var(--primary-color); }
+.cta-link:hover .cta-button { background-color: var(--primary-hover-color); border-color: var(--primary-hover-color); }
 
 .support-plan { text-align: center; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-color); }
 .support-plan h3 { border-bottom: none; }
@@ -149,4 +134,27 @@ import '../styles/global.css';
 .competitor .cost { color: #B71C1C; }
 .period { font-size: 1rem; font-weight: 600; color: var(--subtle-text-color); }
 .note { font-size: 0.8rem; color: var(--subtle-text-color); margin-top: 0.5rem; }
-.vs { font-
+.vs { font-size: 1.5rem; font-weight: 600; color: var(--subtle-text-color); }
+
+@media (max-width: 992px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .card.recommended {
+        top: 0;
+    }
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+    .vs {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .pricing-hero { padding: 3rem 0; }
+    .pricing-hero h1 { font-size: 2.25rem; }
+    .subtitle { font-size: 1.1rem; }
+    .pricing-table { padding: 3rem 0; }
+    .value-comparison { padding: 4rem 0; }
+}
+</style>

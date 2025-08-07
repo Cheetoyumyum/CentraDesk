@@ -1,11 +1,15 @@
+---
+---
 <header>
     <nav class="container">
         <a href="/" class="logo">
             <img src="/logo.png" alt="CentraDesk Logo" />
         </a>
         <div class="nav-links">
-            <a href="/#features">Features</a>
-            <a href="/pricing">Pricing</a>
+            <div class="desktop-links">
+                <a href="/#features">Features</a>
+                <a href="/pricing">Pricing</a>
+            </div>
             <a href="mailto:info@centradesk.ca" class="cta-button">Request a Demo</a>
         </div>
     </nav>
@@ -25,21 +29,19 @@
         align-items: center;
         height: 4.5rem;
     }
-    .logo {
-        font-size: 1.25rem;
-        font-weight: 600;
-        text-decoration: none;
-        color: var(--heading-color);
-    }
     .logo img {
-        height: 32px;
+        height: 28px;
         width: auto;
         display: block;
     }
     .nav-links {
         display: flex;
         align-items: center;
-        gap: 2rem;
+        gap: 1.5rem;
+    }
+    .desktop-links {
+        display: flex;
+        gap: 1.5rem;
     }
     .nav-links a {
         text-decoration: none;
@@ -52,8 +54,18 @@
         padding: 0.5rem 1rem;
         border-radius: 6px;
         transition: background-color 0.2s;
+        white-space: nowrap;
     }
     .nav-links a.cta-button:hover {
         background-color: var(--primary-hover-color);
+    }
+
+    @media (max-width: 768px) {
+        .desktop-links {
+            display: none;
+        }
+        .logo img {
+            height: 24px;
+        }
     }
 </style>

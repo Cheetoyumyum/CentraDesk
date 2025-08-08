@@ -196,11 +196,20 @@ import '../styles/global.css';
         display: none;
     }
 }
-@media (max-width: 768px) {
-    .pricing-hero { padding: 3rem 0; }
-    .pricing-hero h1 { font-size: 2.25rem; }
-    .subtitle { font-size: 1.1rem; }
-    .pricing-table { padding: 3rem 0; }
-    .value-comparison { padding: 4rem 0; }
+@media (max-width: 992px) {
+    .grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+    .card.recommended {
+        transform: scale(1.02);
+        box-shadow: 0 10px 30px -5px rgba(0, 120, 212, 0.2);
+    }
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+    .vs {
+        display: none;
+    }
 }
 </style>

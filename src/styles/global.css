@@ -1,5 +1,13 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 :root {
-  --primary-color: #0078d4; /* Microsoft Blue */
+  --primary-color: #0078d4;
   --primary-hover-color: #005a9e;
   --bg-color: #ffffff;
   --bg-light-color: #f8f9fa;

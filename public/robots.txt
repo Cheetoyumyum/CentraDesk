@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.centradesk.ca/sitemap-index.xml
+Sitemap: https://www.centradesk.ca/sitemap-0.xml

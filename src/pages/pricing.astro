@@ -3,9 +3,12 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
+
+const pageTitle = "Perpetual License Helpdesk Pricing | CentraDesk";
+const pageDescription = "Simple, one-time pricing for a perpetual software license. See the total cost of ownership for our Professional and Business Pro plans. No recurring fees.";
 ---
 
-<Layout title="Pricing | CentraDesk">
+<Layout title={pageTitle} description={pageDescription}>
 	<Header />
 	<main>
 		<section class="pricing-hero">

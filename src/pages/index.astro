@@ -7,9 +7,12 @@ import UseCases from '../components/UseCases.astro';
 import CTA from '../components/CTA.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
+
+const pageTitle = "CentraDesk | The IT Help Desk for Microsoft 365";
+const pageDescription = "Stop paying per-user fees. CentraDesk is a modern, one-time purchase IT solution that lives in your secure SharePoint environment. Manage tickets, assets, and more.";
 ---
 
-<Layout title="CentraDesk | The IT Help Desk for Microsoft 365">
+<Layout title={pageTitle} description={pageDescription}>
 	<Header />
 	<main>
 		<Hero />
